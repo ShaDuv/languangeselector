@@ -1,6 +1,6 @@
 $(document).ready(function (e) {
       console.log('ready');
-      var answers = $(':input').serializeArray();
+      var answers = $('.input').serializeArray();
       var scores = {
         ruby: 0,
         python: 0,
