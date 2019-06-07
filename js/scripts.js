@@ -10,11 +10,18 @@ $(document).ready(function (e) {
           };
           for (var answer of answers) {
             scores[answer.value] += 1;
-            console.log(answer.value);
+            // console.log(answer.value);
           } console.log(scores);
 
-          if (scores[python] >= scores[ruby] && scores[python] >= scores[javascript]) {
-            return 'Python';
+          var resultsString;
+          if (scores['python'] >= scores['ruby'] && scores['python'] >= scores['javascript']) {
+            $('.python').show();
+            }
+          else if (scores['ruby'] >= scores['python'] && scores['ruby'] >= scores['javascript']) {
+            $('.ruby').show();
+            }
+          else {
+            $('.javascript').show();
           }
-      });
+        });
     });
