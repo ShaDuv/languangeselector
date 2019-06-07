@@ -5,8 +5,8 @@
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="jquery-3.4.1.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.class">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <title></title>
   </head>
   <body class="container">
@@ -15,26 +15,41 @@
     <br>
     <br>
     <form class="" action="index.html" method="post" id="quiz" name="quiz">
-      <p>What interests you about programming?</p>
-        <input type="radio" name="" value=""> Making pretty things fast!<br>
-        <input type="radio" name="" value=""> The logic, numbers, and data!<br>
-        <input type="radio" name="" value=""> Seeing something I made do something!<br><br>
-      <p>How patient are you?</p>
-        <input type="radio" name="" value=""> If you need more time to ask, let me know. <br>
-        <input type="radio" name="" value=""> Eh, a little but time is money!<br>
-        <input type="radio" name="" value=""> OMG WHY ARE WE STILL ON THIS QUESTION?!?<br><br>
-      <p>What interests you more?</p>
-        <input type="radio" name="" value=""> BREAK TIME!
-        <input type="radio" name="" value="">
-        <input type="radio" name="" value="">
-      <p>Which of these would you rather have played as a kid?</p>
-        <input type="radio" name="" value="">
-        <input type="radio" name="" value="">
-        <input type="radio" name="" value="">
-      <p>What was your favorite subject in highschool?</p>
-        <input type="radio" name="" value="">
-        <input type="radio" name="" value="">
-        <input type="radio" name="" value="">
+      <label for="">What interests you about programming?</label> <br>
+        <input type="radio" name="programming" value="ruby"> Making pretty things fast!<br>
+        <input type="radio" name="programming" value="python"> The logic, numbers, and data!<br>
+        <input type="radio" name="programming" value="javascript"> Seeing something I made do something!<br>
+        <br>
+      <label for="">How patient are you?</label><br>
+        <input type="radio" name="patient" value="javascript"> If you need more time to ask, let me know. <br>
+        <input type="radio" name="patient" value="python"> Eh, a little but time is money!<br>
+        <input type="radio" name="patient" value="ruby"> OMG WHY ARE WE STILL ON THIS QUESTION?!?<br><br>
+      <label for="">What interests you more?</label><br>
+        <input type="radio" name="interest" value="ruby"> Speed<br>
+        <input type="radio" name="interest" value="python"> Information<br>
+        <input type="radio" name="interest" value="javascript"> Function<br>
+        <br>
+      <label for="">Which of these would you rather have played as a kid?</label><br>
+        <input type="radio" name="games" value="python"> Boggle<br>
+        <input type="radio" name="games" value="ruby"> Legos<br>
+        <input type="radio" name="games" value="javascript"> Hide & Seek<br>
+        <br>
+      <label for="">What was your favorite subject in highschool?</label><br>
+        <input type="radio" name="subject" value="python"> Math<br>
+        <input type="radio" name="subject" value="javascript"> Science<br>
+        <input type="radio" name="subject" value="ruby"> English<br>
+
+        <button type="submit" class="btn">Show me my language.</button>
     </form>
+<!-- Results Section  -->
+    <div class="result">
+      <h2>RUBY!</h2>
+    </div>
+    <div class="result">
+      <h2>Python</h2>
+    </div>
+    <div class="result">
+      <h2>Javascript</h2>
+    </div>
   </body>
 </html>
