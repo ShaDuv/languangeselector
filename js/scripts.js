@@ -2,6 +2,7 @@ $(document).ready(function (e) {
       console.log('ready');
       $("button").click(function(){
           event.preventDefault();
+          $('.form').hide();
           var answers = $('.input').serializeArray();
           var scores = {
             ruby: 0,
