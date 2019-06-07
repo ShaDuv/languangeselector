@@ -1,3 +1,2 @@
-$(document).ready(function () {
-  //your code here
+$(document).ready(function (event) {
   });
